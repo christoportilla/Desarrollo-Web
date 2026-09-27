@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+:root {
+    --Blue-950: hsl(233, 26%, 24%);
+    --Green-500: hsl(136, 64%, 51%);
+    --Cyan-400: hsl(192, 69%, 51%);
+    --Gray-600: hsl(233, 8%, 62%);
+    --Gray-100: hsl(220, 16%, 96%);
+    --Gray-50: hsl(0, 0%, 98%);
+    --White: hsl(0, 100%, 100%);
+}
+
+body {
+    margin: 0;
+    font-family: "Public Sans", sans-serif;
+    font-size: 18px;
+    background-color: var(--Gray-50);
+    color: var(--Blue-950);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+p {
+    color: var(--Gray-600);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.boton {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--White);
+    background: linear-gradient(to right, var(--Green-500), var(--Cyan-400));
+    border: none;
+    border-radius: 30px;
+    padding: 14px 32px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.boton:hover {
+    opacity: 0.6;
+}
+
+#barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--White);
+    height: 80px;
+    padding: 0 165px;
+    position: relative;
+    z-index: 10;
+}
+
+#menu {
+    display: flex;
+    gap: 30px;
+    height: 100%;
+}
+
+#menu a {
+    color: var(--Gray-600);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+}
+
+#menu a:hover {
+    color: var(--Blue-950);
+    border-bottom-color: var(--Green-500);
+}
+
+#hamburguesa {
+    display: none;
+}
+
+#inicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 660px;
+    padding-left: 165px;
+    position: relative;
+}
+
+#inicio-texto h1 {
+    font-size: 56px;
+    margin: 0;
+    line-height: 1.15;
+    max-width: 450px;
+}
+
+#inicio-texto p {
+    margin: 25px 0 35px;
+    max-width: 440px;
+}
+
+#inicio-imagen {
+    height: 100%;
+    background-image: url(./images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: -40px bottom;
+    position: relative;
+}
+
+#celulares {
+    width: 770px;
+    position: absolute;
+    top: -170px;
+    left: 110px;
+}
+
+#porque {
+    background-color: var(--Gray-100);
+    padding: 100px 0;
+}
+
+#porque h2,
+#articulos h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.subtitulo {
+    max-width: 640px;
+    margin: 25px 0 70px;
+}
+
+#caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.caracteristica h3 {
+    font-size: 24px;
+    margin: 40px 0 25px;
+}
+
+.caracteristica p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#articulos {
+    padding: 80px 0 90px;
+}
+
+#lista-articulos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: var(--White);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-texto {
+    padding: 20px 25px 30px;
+}
+
+.autor {
+    font-size: 10px;
+    color: var(--Gray-600);
+}
+
+.card h3 {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.card h3 a {
+    color: var(--Blue-950);
+}
+
+.card h3 a:hover {
+    color: var(--Green-500);
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+#pie {
+    background-color: var(--Blue-950);
+    padding: 45px 0 20px;
+}
+
+#pie-contenido {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pie-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#redes {
+    display: flex;
+    gap: 15px;
+}
+
+#redes img {
+    width: 20px;
+}
+
+#redes a:hover img {
+    filter: brightness(0) saturate(100%) invert(64%) sepia(59%) saturate(522%) hue-rotate(84deg);
+}
+
+#pie-enlaces {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    gap: 15px 120px;
+    margin-right: auto;
+    margin-left: 120px;
+}
+
+#pie-enlaces a {
+    color: var(--White);
+    font-size: 15px;
+}
+
+#pie-enlaces a:hover {
+    color: var(--Green-500);
+}
+
+#pie-derecha {
+    text-align: right;
+}
+
+#pie-derecha p {
+    font-size: 15px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.attribution a {
+    color: var(--Cyan-400);
+}
+
+@media (max-width: 900px) {
+    #barra {
+        padding: 0 25px;
+        height: 70px;
+    }
+
+    #menu,
+    #barra .boton {
+        display: none;
+    }
+
+    #hamburguesa {
+        display: block;
+    }
+
+    #inicio {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    #inicio-imagen {
+        grid-row: 1 / 2;
+        height: 280px;
+        background-image: url(./images/bg-intro-mobile.svg);
+        background-size: cover;
+        background-position: bottom;
+        overflow: hidden;
+    }
+
+    #celulares {
+        width: 90%;
+        max-width: 420px;
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #inicio-texto {
+        padding: 40px 25px 80px;
+    }
+
+    #inicio-texto h1 {
+        font-size: 40px;
+    }
+
+    #inicio-texto p {
+        font-size: 15px;
+        margin: 20px auto 30px;
+    }
+
+    #porque {
+        padding: 70px 0;
+        text-align: center;
+    }
+
+    #porque h2,
+    #articulos h2 {
+        font-size: 32px;
+    }
+
+    .subtitulo {
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+
+    #caracteristicas,
+    #lista-articulos {
+        grid-template-columns: 1fr;
+    }
+
+    .caracteristica h3 {
+        margin: 30px 0 15px;
+    }
+
+    .caracteristica p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    #articulos h2 {
+        text-align: center;
+    }
+
+    #pie-contenido {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #pie-logo {
+        align-items: center;
+        gap: 30px;
+    }
+
+    #pie-enlaces {
+        grid-template-rows: none;
+        grid-auto-flow: row;
+        margin: 30px 0;
+    }
+
+    #pie-derecha {
+        text-align: center;
+    }
+}
