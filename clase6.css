@@ -1,0 +1,41 @@
+p {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Media es una regla que recibe una condición. Cuando la condición se cumple, las condiciones dentro de la regla se aplicarán */
+/* Es recomendable poner el más grande arriba y el más pequeño abajo */
+@media (width <= 900px) {
+    body {
+        background-color: rebeccapurple;
+    }
+
+    p {
+        font-size: 30px;
+    }
+}
+
+@media (width <= 600px) {
+    body {
+        background-color: blue;
+    }
+
+    p {
+        font-size: 24px;
+    }
+}
+
+#cajaPadre {
+    /* para colocar de izquierda a derecha se usa display flex */
+    display: flex;
+    background-color: aquamarine;
+    padding: 10px;
+    justify-content: space-evenly;
+    /* cuando los elementos no tienen más espacio horizontalmente, entonces bajan con wrap en el orden que fueron maquetados */
+    flex-wrap: wrap;
+}
+
+#cajaPadre div {
+    background-color: rgb(88, 132, 179);
+    width: 300px;
+}

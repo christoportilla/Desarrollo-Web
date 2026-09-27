@@ -1,0 +1,57 @@
+body {
+    /* background: linear-gradient(45deg, green, blue); */
+    background-image: url(https://images.pexels.com/photos/34618898/pexels-photo-34618898.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Las clases siempre se crean con punto al inicio */
+/* Una clase puede pertener a muchos elementos a la vez */
+/* Las clases pueden recibir cualquier nombre */
+.parrafos-importantes {
+    color: rgb(114, 191, 246);
+    background-color: rgb(2, 44, 75);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.p-mas-importante {
+    font-size: 30px;
+}
+
+.viajes-importantes {
+    color: red;
+}
+
+/* Los IDs pueden recibir cualquier nombre */
+#especial {
+    color: violet;
+    background-color: rgb(63, 1, 121);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid violet;
+    box-shadow: 0 10px 10px rgb(90, 15, 160);
+}
+
+button {
+    background-color: gray;
+}
+
+/* hover es una pseudo clase que se activa después de pasar el cursor sobre el elemento */
+button:hover {
+    background-color: red;
+}
+
+/* Se activa cuando damos click sobre el elemento */
+button:active {
+    background-color: green;
+    color: rgb(3, 37, 3);
+}
+
+input:focus {
+    background-color: gray;
+}
+
+input:valid {
+    color: red;
+}

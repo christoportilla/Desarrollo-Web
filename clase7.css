@@ -1,0 +1,16 @@
+#cajaPadre {
+    background-color: rgb(38, 108, 170);
+    min-height: 200px;
+    /* por defecto crea una fila por cada elemento */
+    display: grid;
+    /* solo tenemos una columna, pero podemos definir cuántas queremos */
+    /* auto calcula el width automáticamente de la columna */
+    grid-template-columns: repeat(3, auto);
+
+}
+
+#cajaPadre div {
+    border-radius: 20px;
+    font-size: 20px;
+
+}

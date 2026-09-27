@@ -1,0 +1,38 @@
+/* Todas las propiedades que cambiamos aplican para todas las etiquetas */
+body {
+    /* Color de fondo de toda la página */
+    background-color: white;
+}
+p {
+    color: red;
+    font-size: 50px;
+    background-color: cyan;
+    border: 10px solid red;
+    margin: 30px;
+    padding: 30px;
+    /* En margin y padding, si hay dos valores, el primero toma de arriba y abajo y el segundo de los costados */
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+main {
+    background-color: blue;
+    height: 200px;
+}
+button {
+    font-size: 30px;
+    color: green;
+    background-color: rgb(112, 155, 112);
+    /* Bordes curvos */
+    border-radius: 10px;
+    /* Cambiando el borde */
+    /* El border tiene pixeles, estilo y color */
+    border: 2px solid rgb(7, 95, 7);
+    /* El primer valor es el eje x y el segundo valor es el eje y */
+    /* El tercer valor es el difuminado */
+    /* El cuarto valor es opcional y es el tamaño. Nombre oficial es el gutter */
+    /* El quinto valor es el grosor */
+    box-shadow: 5px 5px 20px grey;
+    width: 200px;
+}
