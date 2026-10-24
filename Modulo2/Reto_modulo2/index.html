@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/cards.css">
+    <title>El clima ahora</title>
+</head>
+
+<body>
+    <header>
+        <h2>EL CLIMA AHORA</h2>
+
+        <select id="unidades">
+            <option value="metric">Métrico (°C)</option>
+            <option value="imperial">Imperial (°F)</option>
+        </select>
+    </header>
+
+    <main>
+        <h1>¿Cómo está el cielo hoy?</h1>
+
+        <section id="buscador">
+            <div id="inputCiudad">
+                <img src="./assets/images/icon-search.svg" alt="">
+                <input type="text" id="ciudad" placeholder="Ingresa el nombre de la ciudad...">
+            </div>
+            <button id="btnBuscar">Buscar</button>
+        </section>
+
+        <p id="mensaje"></p>
+
+        <section id="clima">
+            <div id="izquierda">
+                <div id="actual">
+                    <div>
+                        <h2 id="lugar"></h2>
+                        <p id="fecha"></p>
+                    </div>
+                    <div id="tempActual">
+                        <img id="iconoActual" src="" alt="">
+                        <span id="temperatura"></span>
+                    </div>
+                </div>
+
+                <div id="detalles">
+                    <div class="detalle">
+                        <p>Sensación térmica</p>
+                        <span id="sensacion"></span>
+                    </div>
+                    <div class="detalle">
+                        <p>Humedad</p>
+                        <span id="humedad"></span>
+                    </div>
+                    <div class="detalle">
+                        <p>Viento</p>
+                        <span id="viento"></span>
+                    </div>
+                    <div class="detalle">
+                        <p>Precipitación</p>
+                        <span id="precipitacion"></span>
+                    </div>
+                </div>
+
+                <h3>Pronóstico diario</h3>
+                <div id="diario"></div>
+            </div>
+
+            <aside id="porHora">
+                <div id="porHoraTitulo">
+                    <h3>Pronóstico por hora</h3>
+                    <select id="dias"></select>
+                </div>
+                <div id="horas"></div>
+            </aside>
+        </section>
+    </main>
+
+    <script type="module" src="./script/getData.js"></script>
+</body>
+
+</html>

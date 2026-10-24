@@ -1,0 +1,49 @@
+#diario {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 1em;
+}
+
+.divDia {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    p {
+        margin: 0;
+        text-transform: capitalize;
+    }
+
+    img {
+        width: 45px;
+    }
+
+    .temps {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+#horas {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.divHora {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+
+    img {
+        width: 30px;
+    }
+
+    p {
+        margin: 0;
+        flex: 1;
+    }
+}
