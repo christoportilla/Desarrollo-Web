@@ -1,0 +1,21 @@
+.ejemplo {
+    padding: 10px 20px;
+    border: 0;
+    color: gray;
+    background-color: #1a1a1a;
+    box-shadow: 0 0 20px gray;
+    border-radius: 10px;
+    font-family: 'Candara Light';
+}
+
+/* para el boton 2 */
+
+#ejemplo2 {
+    padding: 10px 20px;
+    border: 0;
+    color: rgb(233, 224, 224);
+    background-color: #902f2f;
+    box-shadow: 0 0 20px rgb(73, 61, 61);
+    border-radius: 10px;
+    font-family: 'Candara Light';
+}
