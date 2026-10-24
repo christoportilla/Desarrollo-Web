@@ -1,0 +1,36 @@
+#countries {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    gap: 3em;
+}
+
+#filters {
+    width: 90%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+
+    #inputPais {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+        width: 360px;
+        border-radius: 4px;
+        padding: 10px;
+        display: flex;
+        gap: 20px;
+        padding: 1em 2em;
+        align-items: center;
+
+        ion-icon {
+            transform: scale(1.2);
+        }
+
+        input {
+            width: 100%;
+            border: 0;
+            outline: 0;
+        }
+
+    }
+}

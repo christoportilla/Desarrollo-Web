@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/countries.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section id="filters">
+            <div id="inputPais">
+                <ion-icon name="search-outline"></ion-icon>
+                <input type="text" id="paisFilter" placeholder="Buscar por pais...">
+            </div>
+
+            <select name="" id="continentes">
+                <option value="*">Todos</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </section>
+        <section id="countries">
+
+        </section>
+    </main>
+
+    <script type="module" src="./script/getData.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
