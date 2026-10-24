@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="formulario" data-aos="fade-up" data-aos-duration="3000">
+        <div>
+            <label for="">Texto (nombre)</label>
+            <input name="juguete" id="nombre" type="text">
+        </div>
+        <div>
+            <label for="">Numero (edad)</label>
+            <input name="edad" id="edad" type="number">
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input name="password" id="password" type="password">
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input name="correo" id="correo" type="email">
+        </div>
+        <div>
+            <label for="">Acepta terminos y servicios</label>
+            <input name="service" id="service" type="checkbox">
+        </div>
+        <div>
+            <label for="">Fecha que terminaste con ella</label>
+            <input name="fecha" id="fecha" type="date">
+        </div>
+
+        <div>
+            <label for="">Selecciona tu pais</label>
+            <select name="pais" id="pais">
+                <option value="pe">Perú</option>
+                <option value="cl">Chile</option>
+                <option value="kr">Corea</option>
+            </select>
+        </div>
+
+        <!-- por defecto, los botones que se colocan
+         dentro de un formulario, asumen que vas a enviar
+         datos. por eso al darle click ves que se recarga la página -->
+        <button type="button" id="btnVerDatos">Mostrar datos</button>
+        <button type="button" id="btnVerDatos2">Mostrar datos sin constantes</button>
+    </form>
+
+
+    <hr>
+    <form id="miniCalculadora">
+        <div>
+            <label for="">Numero</label>
+            <p id="number">0</p>
+        </div>
+        <button type="button" id="add">Añadir 1</button>
+        <button type="button" id="minus">Restar 1</button>
+        <button type="button">Duplicar</button>
+        <button type="button">Dividir entre 2</button>
+        <button type="button">Raiz cuadrada</button>
+        <button type="button">Validar si es par</button>
+        <button type="button">Es primo?</button>
+
+        <div>
+            <label for="">Elevar a:</label>
+            <input type="number">
+            <button>Elevar</button>
+        </div>
+    </form>
+
+    <button id="nuevaAlerta">Alerta bonita</button>
+
+    <script src="./script.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

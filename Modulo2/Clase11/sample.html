@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- con esta etiqueta podemos escribir Javascript dentro del mismo html -->
+    <script>
+        // este es un comentario
+        // console.log mustra un mensaje en la consola
+        console.log("Este es mi primer código")
+
+        // si quieres usar números, no los coloques entre comillas
+        // colocarlo, hará que actuén como si fuesen texto (string)
+        console.log('18')
+        console.log(18)
+
+        // si operas un texto on un número, a pesar que el texto 
+        // tenga un número dentro, lo que va a pasar es que se van
+        // a juntar. Porque internamente no puedes sumar un texto con un número
+        // ambos son de tipo de dato distinto, uno es texto (string) y el otro
+        // es número (number)
+        console.log('18' + 10)
+        console.log(18 + 10)
+
+        // creando variables
+        let frutaFavorita = 'Fresa'
+
+        // creando constanstes
+        const apellido = "Minaya"
+
+        // puedes colocar en consola el nombre de una variable
+        // en la consola se mostrará el valor que tiene guardado
+        console.log("fruta1", frutaFavorita)
+
+        // cambiando el valor de mi fruta favorita
+        frutaFavorita = "Maracuyá"
+        console.log("fruta2", frutaFavorita)
+
+        // mostrando el valor de una constante
+        console.log("constante1:", apellido)
+
+
+        // -----------------
+        let salario = 1200
+        let doble = 2
+        console.log(salario * doble)
+
+
+        // perímetro de un rectángulo
+
+        const ladoLargo = 20
+        const ladoCorto = 5
+
+        // para pensar
+        const salarioInicial = 1500
+
+        // 1er año - 10%
+        let year1 = salarioInicial + salarioInicial * 0.1
+        // 2do año - 10%
+        let year2 = year1 + year1 * 0.1
+        // 3er año - 10%
+        let year3 = year2 + year2 * 0.1
+        // 4to año - 10%
+        let year4 = year3 + year3 * 0.1
+        // 5to año - 10%
+        let year5 = year4 + year4 * 0.1
+
+        console.log(year1)
+        console.log(year2)
+        console.log(year3)
+        console.log(year4)
+        console.log(year5)
+
+        // mostrar un mensaje de alerta
+        //alert("Este es un mensaje de larga distancia")
+
+        // mensaje de alerta que recibe algún valor
+        // const valor = prompt("Coloca tu edad")
+
+        // para tratar un texto como número envolvemos
+        // el texto en Number(texto)
+        console.log(Number("hola soy el mejor"))
+
+        // si intentas pasar un texto completo a número
+        // obtendras un NaN (Not a Number)
+        // estás intentando pasar a número algo que realmente
+        // no lo es
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
