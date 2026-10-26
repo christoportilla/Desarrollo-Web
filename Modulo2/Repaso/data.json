@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "Laptop",
+        "precio": 2500,
+        "categoria": "Tecnología",
+        "stock": 5
+    },
+    {
+        "id": 2,
+        "nombre": "Audífonos",
+        "precio": 150,
+        "categoria": "Tecnología",
+        "stock": 0
+    },
+    {
+        "id": 3,
+        "nombre": "Polo",
+        "precio": 45,
+        "categoria": "Ropa",
+        "stock": 20
+    },
+    {
+        "id": 4,
+        "nombre": "Zapatillas",
+        "precio": 280,
+        "categoria": "Ropa",
+        "stock": 8
+    },
+    {
+        "id": 5,
+        "nombre": "Café",
+        "precio": 30,
+        "categoria": "Alimentos",
+        "stock": 15
+    },
+    {
+        "id": 6,
+        "nombre": "Chocolate",
+        "precio": 8,
+        "categoria": "Alimentos",
+        "stock": 0
+    }
+]
