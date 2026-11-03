@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Nosotros from "./Nosotros"
+import Nosotros from "./components/nosotros/Nosotros"
 import './app.css'
 
 function App() {
@@ -30,7 +30,14 @@ function App() {
       <hr />
       <h2>Total: {total}</h2>
       <button onClick={() => { setTotal(numero + numero2) }}>Suma</button>
-      {/* <Nosotros/> */}
+      <Nosotros 
+        title="Últimas noticias" strong={true}
+        text="Descripción del apartado"
+        btnText="Dame click"
+        />
+      <Nosotros
+        text="Nueva descripción"
+        btnText="Cancelar"/>
     </>
   )
 }
