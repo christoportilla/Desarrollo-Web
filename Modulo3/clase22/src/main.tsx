@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client'
-import Lista from './Lista.tsx'
+import FormulariosControlados from './components/FormulariosControlados'
 
 createRoot(document.getElementById('root')!).render(
-    <Lista />
+    <FormulariosControlados />
 )
